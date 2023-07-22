@@ -1,0 +1,289 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-login {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.img-box {
+    width: 50%;
+    height: 100%;
+    background-color: #5bb4ff;
+    padding: 20px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.content-box .form-box {
+    width: 50%;
+}
+
+.content-box .form-box .ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box .form-box .ul li {
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content-box .form-box .ul li:hover {
+    background: #e4e4e4;
+}
+
+.form-box .ul li img {
+    width: 40px;
+}
+
+.content-box .form-box h2 {
+    color: #32324f;
+    font-weight: 600;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.content-box .form-box .input-box {
+    margin-bottom: 20px;
+}
+
+.content-box .form-box .input-box input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 17px;
+    color: #32324f;
+    background-color: #ecf2f7;
+    border-radius: 5px;
+}
+
+.content-box .form-box .input-box span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #32324f;
+    font-weight: 400;
+}
+
+.content-box .form-box .input-box input::placeholder {
+    color: #a9adb6;
+}
+
+.content-box .form-box .input-box input[type=submit] {
+    background: #4aa4ee;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.content-box .form-box .input-box input[type=submit]:hover {
+    background: #3286ca;
+}
+
+.content-box .form-box .remember{
+    margin-bottom: 20px;
+    color: #32324f;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-box .form-box .remember a{
+    text-decoration: none;
+    color: #4aa4ee;
+}
+.content-box .form-box .remember a:hover{
+    color: #3286ca;
+}
+
+.content-box .form-box .input-box p {
+    color: #32324f;
+}
+.content-box .form-box .input-box p a{
+    color: #4aa4ee;
+}
+
+.content-box .form-box .input-box p a:hover{
+    color: #3286ca;
+}
+.content-box .form-box h3
+{
+    color: #607d8b;
+    text-decoration: none;
+    margin: 40px 0 15px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 22px;
+}
+@media (max-width:868px) {
+    .container-login .img-box{
+        display: none;
+    }
+    .container-login .content-box{
+        width: 100%;
+    }
+    .container-login .content-box .form-box{
+        width: 100%;
+        padding: 40px;
+        background: white;
+        margin: 50px;
+    } 
+    .container-login .content-box .form-box h3{
+        margin: 30px 0 10px;
+    } 
+}
+@media (max-width:450px) {
+    .container-login .content-box .form-box .remember{
+        flex-wrap: wrap;
+    }
+    .container-login .content-box .form-box .remember a{
+        margin-top: 20px;
+    }
+    
+}
+.animated-background{
+    background: linear-gradient(
+        to right, #3232a0,
+        #008080, #40E0D0);
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;    
+}
+
+@keyframes animate-background{
+    0%{ background-position: 0 50%;}
+    50%{ background-position: 100% 50%;}
+    100%{ background-position: 0 50%;}
+}
+.precos{
+    background-color: rgb(255, 255, 255)!important;
+    min-width: 100%;
+    min-height: 600px;
+}
+.px{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+.centro{
+    padding-left: 25% !important;
+    padding-right: 25% !important;
+}
+.row{
+    max-width: 100%;
+}
+#server-image, #current-image, #desired-image{
+    height: 200px;
+    width: 200px;;
+}
+.meuLink{
+    font-size: large !important;
+    text-decoration: none !important;
+    margin-top: 4%;
+}
+a:link { color: black; text-decoration: none;}
+a:hover { 
+    color: rgb(40, 13, 141); 
+    text-decoration: none !important;
+    font-weight: bold;
+}
+a:active { color: black; text-decoration: none;}
+
+@import url('https://fonts.cdnfonts.com/css/tt-octosquares-trl');
+.footer{
+    
+    background-image: url("/elojob/img/fundo_contato.jpg") ;
+    max-width: 100%;
+    height: 500px;
+    color: #ff0f7b;
+    font-family:'TT Octosquares Trl', sans-serif !important;
+
+}
+.contato{
+    display: grid;
+}
+h1.contato{
+    padding-left: 120px;
+    padding-top: 40px;
+    color: #ff0f7b;
+    font-size: 50px;
+    font-family:'TT Octosquares Trl', sans-serif !important;
+    display: block;
+}
+.redes{
+    text-align: left;
+    padding-left: 20%;
+    width: max-content;
+    padding-top: 5%;
+    display: table-header-group;
+    font-size: x-large;
+
+}
+a.redes{
+    color: white !important;
+    text-align: left;
+    padding-left: 20%;
+    width: max-content;
+    padding-top: 5%;
+}
+a.redes:visited{
+    color: white !important;
+    width: max-content;
+}
+ul.redes, li.redes{
+    list-style-type: none;
+}
+.pagamentos{
+    display: inline-block;
+    padding-top: 6%;
+}
+h3.pagamentos{
+    color: white;
+    display: block;
+}
+ul.pagamentos{
+    list-style-type: none;  
+}
+li.pagamentos{
+    margin-right: 10px; 
+}
+.grupo{
+    display: flex;
+}
+
