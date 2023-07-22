@@ -228,7 +228,7 @@ a:active { color: black; text-decoration: none;}
 @import url('https://fonts.cdnfonts.com/css/tt-octosquares-trl');
 .footer{
     
-    background-image: url("/elojob/img/fundo_contato.jpg") ;
+    background-image: url("https://raw.githubusercontent.com/alebona/elojobbrave.github.io/main/img/fundo_contato.jpg") ;
     max-width: 100%;
     height: 500px;
     color: #ff0f7b;
