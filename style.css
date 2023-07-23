@@ -192,10 +192,15 @@
     50%{ background-position: 100% 50%;}
     100%{ background-position: 0 50%;}
 }
+.sessao{
+    max-width: 100%;
+    min-height: auto;
+    display: block;
+}
 .precos{
     background-color: rgb(255, 255, 255)!important;
-    min-width: 100%;
-    min-height: 600px;
+    max-width: 100%;
+    max-height: auto;
 }
 .px{
     padding-left: 50px !important;
