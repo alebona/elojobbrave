@@ -218,9 +218,12 @@
     width: 200px;;
 }
 .meuLink{
-    font-size: large !important;
     text-decoration: none !important;
     margin-top: 4%;
+}
+h2.meuLink{
+    background-color: rgb(247, 247, 9);
+    font-size: 40px;
 }
 a:link { color: black; text-decoration: none;}
 a:hover { 
@@ -235,26 +238,31 @@ a:active { color: black; text-decoration: none;}
     
     background-image: url("https://raw.githubusercontent.com/alebona/elojobbrave.github.io/main/img/fundo_contato.jpg") ;
     max-width: 100%;
-    height: 500px;
+    height: 100%;
     color: #ff0f7b;
     font-family:'TT Octosquares Trl', sans-serif !important;
 
 }
 .contato{
-    display: grid;
+    display: list-item;
+}
+.img-contato{
+    display: block;
+    margin: 5%;
+    height: 15% ;
+    width: auto;
 }
 h1.contato{
-    padding-left: 120px;
     padding-top: 40px;
     color: #ff0f7b;
-    font-size: 50px;
-    font-family:'TT Octosquares Trl', sans-serif !important;
+    font-size: 30px;
+    font-family: 'TT Octosquares Trl', sans-serif !important;
     display: block;
+    text-align: left;
 }
 .redes{
     text-align: left;
-    padding-left: 20%;
-    width: max-content;
+    max-width: 100%;
     padding-top: 5%;
     display: table-header-group;
     font-size: x-large;
@@ -271,24 +279,67 @@ a.redes:visited{
     color: white !important;
     width: max-content;
 }
-ul.redes, li.redes{
+ul.redes{
     list-style-type: none;
+    max-width: 100%;
+}
+li.redes{
+    list-style-type: none;
+    max-width: 25%;
+
 }
 .pagamentos{
-    display: inline-block;
-    padding-top: 6%;
+    max-width: 100%;
+
 }
 h3.pagamentos{
     color: white;
     display: block;
+    max-width: 100%;
+    padding-top: 20%;
 }
 ul.pagamentos{
-    list-style-type: none;  
-}
-li.pagamentos{
-    margin-right: 10px; 
-}
-.grupo{
+    list-style-type: none;
+    max-width: 100%;
     display: flex;
 }
+li.pagamentos{
+    max-width: 33%;
+
+}
+.grupo{
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+.card{
+    width: 200px !important;
+    height: 200px !important;
+    background-color: #2e2e2e !important;
+    border-radius: 20px !important;
+    display: inherit !important;
+    margin-left: 30%;
+    flex-direction: column !important;
+    gap:60px;
+    cursor: pointer;
+    box-shadow: -0px 0px #ff51c5, 0px 0px #00f6ff;
+    transition: box-shadow 0.2s, border-color 0.2s;
+
+}
+.card:hover{
+    box-shadow: -5px 5px #ff51c5, -15px 15px 20px -10px #ff51c5,
+    5px -5px #00f6ff, 5px -5px 20px #00f6ff;
+
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
+  #tooltip {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
 

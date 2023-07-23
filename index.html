@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="popper.mim.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://accounts.google.com/gsi/client" async></script>
     <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
     <link href="https://fonts.cdnfonts.com/css/tt-octosquares-trl" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-                
+         
     <title> ELOJOB BRAVE </title>
 
 </head>
@@ -161,7 +162,7 @@
                     <div class="row">
                         <div class="col"></div>
                         <div class="col">
-                            <a href="" id="meuLink" target="_blank"><h2 id="resultado"></h2></a>
+                            <a href="" id="meuLink" target="_blank" ><h2 id="resultado" class="meuLink"></h2></a>
 
                         </div>
                         <div class="col"></div>
@@ -180,31 +181,52 @@
         </section>
         <section id="contato" name="contato" class="footer sessao">
             <div class="contato">
-            <div class="contato"><h1 class="contato">Contatos</h1></div>
-            <div class="grupo">
-                <div class="pagamentos">
-                    <ul class="pagamentos">
-                        <h3 class="pagamentos">Formas de Pagamento</h3>
-                        <li class="pagamentos"><img src="https://raw.githubusercontent.com/alebona/elojobbrave.github.io/main/img/mercado-pago-logo.png" style=" width: auto; height: 70px;"></li>
-                        <li class="pagamentos"><img src="https://raw.githubusercontent.com/alebona/elojobbrave.github.io/main/img/pix-logo.png" style=" width: auto; height: 70px;"></li>
-                        <li class="pagamentos"><img src="https://raw.githubusercontent.com/alebona/elojobbrave.github.io/main/img/picpay-logo.png" style=" width: auto; height: 70px;"></li>
-                    </ul>
-                </div>
-                <div class="redes float-end">
-                    <ul class="redes">
-                        <li class="redes"><a class="redes" href="https://discord.com/invite/6DpTKjdEyj" target="_blank"><img src="https://raw.githubusercontent.com/alebona/elojobbrave.github.io/main/img/discord-icon.png" style="height: 70px; width: 70px;padding-left: 5px;"></a></li>
-                        <li class="redes"><a class="redes" href="https://www.instagram.com/elojobbrave/" target="_blank"><img src="https://raw.githubusercontent.com/alebona/elojobbrave.github.io/main/img/instagram-icon.png" style="height: 70px; width: 70px; padding-left: 5px;">  @elojobbrave</a></li>
-                        <li class="redes"><a class="redes" href=""><img src="https://raw.githubusercontent.com/alebona/elojobbrave.github.io/main/img/gmail-icon.png" style="height: 70px; width: 70px; padding-left: 5px;">  elojobbrave@gmail.com</a></li>
-                        <li class="redes"><a class="redes" href="https://api.whatsapp.com/send?phone=5583999792445&text=Ol%C3%A1+entre+em+contato+com+a+gente" target="_blank"><img src="https://raw.githubusercontent.com/alebona/elojobbrave.github.io/main/img/whatsapp-icon.png" style="height: 70px; width: 70px; padding-left: 5px;">  (83) 99979-2445</a></li>
-                    </ul>
+                <div class="row" style="height: 500px;">
+                    <div class="col-4" style="height: 500px;">
+                        <h1 class="contato text-center sticky-bottom">Formas de Pagamento</h1>
+                        <img src="img/mercado-pago-logo.png" height="15%" width="auto" class="img-contato">
+                        <img src="img/pix-logo.png"  class="img-contato">
+                        <img src="img/picpay-logo.png" height="15%" width="auto" class="img-contato">
+                    </div>
+                    <div class="col-4">
+                        <h1 class="contato">Contatos</h1>
+                        <ul class="redes">
+                            <li class="redes"><a class="redes" href="https://discord.com/invite/6DpTKjdEyj" target="_blank"><img src="img/discord-icon.png" style="height: 60%; width: 60%;"></a></li>
+                            <li class="redes"><a class="redes" href="https://www.instagram.com/elojobbrave/" target="_blank"><img src="img/instagram-icon.png" style="height: 60%; width: 60%;"></a></li>
+                            <li class="redes">
+                                <img src="img/gmail-icon.png" style="height: 23%; width: 23%;" onclick="copiarTexto()" 
+                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-custom-class="custom-tooltip"
+                                data-bs-title="Clique para copiar o e-mail!">
+                                <input type="hidden" id="email" value="elojobbrave@gmail.com" >
+                            
+                            </li>
+                            <li class="redes"><a class="redes" href="https://api.whatsapp.com/send?phone=5583999792445&text=Ol%C3%A1+entre+em+contato+com+a+gente" target="_blank"><img src="img/whatsapp-icon.png" style="height: 28.7%; width: 28.7%;">  (83) 99979-2445</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-4">
+
+
+                    </div>
                 </div>
             </div>
-            </div>
+
+
         </section>
     </div>
       
 </body>
 <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    //copiar e-mail para o clipboard
+    function copiarTexto() {
+        let textoCopiado = document.getElementById("email");
+        textoCopiado.select();
+        navigator.clipboard.writeText(textoCopiado.value);
+   
+    }
     // Captura os elementos do HTML usando seus IDs
     const selectServidor = document.getElementById('servidor');
     const selectFila = document.getElementById('fila');
