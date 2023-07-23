@@ -212,6 +212,8 @@
 }
 .row{
     max-width: 100%;
+    display: inline-flex !important;
+    width: 100%;
 }
 #server-image, #current-image, #desired-image{
     height: 200px;
@@ -244,7 +246,8 @@ a:active { color: black; text-decoration: none;}
 
 }
 .contato{
-    display: list-item;
+    display: inline-block;
+    width: 100%;
 }
 .img-contato{
     display: block;
@@ -332,9 +335,7 @@ li.pagamentos{
 
 }
 
-.custom-tooltip {
-    --bs-tooltip-bg: var(--bs-primary);
-  }
+
   #tooltip {
     background-color: #333;
     color: white;
@@ -342,4 +343,5 @@ li.pagamentos{
     border-radius: 4px;
     font-size: 13px;
   }
+
 
