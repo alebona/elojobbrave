@@ -196,6 +196,7 @@
     max-width: 100%;
     min-height: auto;
     display: block;
+    position: relative;
 }
 .precos{
     background-color: rgb(255, 255, 255)!important;
@@ -213,7 +214,8 @@
 .row{
     max-width: 100%;
     display: inline-flex !important;
-    width: 100%;
+    width: 100%; 
+
 }
 #server-image, #current-image, #desired-image{
     height: 200px;
@@ -238,7 +240,8 @@ a:active { color: black; text-decoration: none;}
 @import url('https://fonts.cdnfonts.com/css/tt-octosquares-trl');
 .footer{
     
-    background-image: url("https://raw.githubusercontent.com/alebona/elojobbrave.github.io/main/img/fundo_contato.jpg") ;
+ /*   background-image: url("../img/fundo_contato.jpg") ;*/
+ background-color: #262626;
     max-width: 100%;
     height: 100%;
     color: #ff0f7b;
@@ -246,7 +249,7 @@ a:active { color: black; text-decoration: none;}
 
 }
 .contato{
-    display: inline-block;
+    display: flow-root;
     width: 100%;
 }
 .img-contato{
@@ -315,25 +318,6 @@ li.pagamentos{
     max-width: 100%;
     height: 100%;
 }
-.card{
-    width: 200px !important;
-    height: 200px !important;
-    background-color: #2e2e2e !important;
-    border-radius: 20px !important;
-    display: inherit !important;
-    margin-left: 30%;
-    flex-direction: column !important;
-    gap:60px;
-    cursor: pointer;
-    box-shadow: -0px 0px #ff51c5, 0px 0px #00f6ff;
-    transition: box-shadow 0.2s, border-color 0.2s;
-
-}
-.card:hover{
-    box-shadow: -5px 5px #ff51c5, -15px 15px 20px -10px #ff51c5,
-    5px -5px #00f6ff, 5px -5px 20px #00f6ff;
-
-}
 
 
   #tooltip {
@@ -343,5 +327,241 @@ li.pagamentos{
     border-radius: 4px;
     font-size: 13px;
   }
+  .content { float:left; width:92%; margin:0 4%; padding: 20px 0; margin-bottom: 6% !important;}
+  .main_footer .conteudo-rodape { float:left; width:90%; margin:0 5%; padding: 5em 0; }
+  .conteudo-rodape { float:left; width:100%; }
+  
+  .colfooter { 
+  
+      width:100%; 
+      height:auto; 
+      float:left; 
+      margin-bottom:2em;
+  
+  }
+
+  .colfooter ul        { width:100%; float:left; list-style-type: none; padding-left: 0px;}
+.colfooter ul li     { padding:0.2em 0em; }
+.colfooter ul li a   { text-decoration:none; color:#ffffff; font-size:1em; }
+.colfooter ul li a i { font-size:0.5em; }
+.colfooter ul li a:hover { text-decoration:underline; }
+
+.colfooter .titleFooter   { 
+
+	font-size:1.3em; 
+	color:#ffffff; 
+	padding-bottom: 0.5em; 
+	margin-bottom:0.5em; 
+	border-bottom:1px #ffffff solid;
+}
+
+.colfooter p  {color:#ffffff; font-size:1em; height:25px; } 
+
+.botao{
+
+    padding: 10px 12px;
+    color: #fff;
+    letter-spacing:2px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    margin-right:7px;
+    
+  }
+  .botao::before {
+    
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #6098FF;
+    display: block;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+  }
+  .botao:hover::before {
+    
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+  .botao{
+  
+      font-size:1em;
+      color:#000000;
+      text-align:center;
+      border:1px solid #ffffff;
+      border-radius:3px;
+      overflow: hidden!important;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      background: white!important;
+      z-index:10;    
+  }
+  .botao-ml{
+    padding: 2px;
+
+  }
+  .botao:hover{
+  
+      border: 1px solid #adaaaa;
+      color: #ffffff!important;
+  }
+  .botao::before {
+      content: '';
+      width: 0%;
+      height: 100%;
+      display: block;
+      background: #504a4a;
+      position: absolute;
+      -ms-transform: skewX(-15deg);
+      -webkit-transform: skewX(-15deg); 
+      transform: skewX(-15deg);   
+      left: -10%;
+      opacity: 1;
+      top: 0;
+      z-index: -12;
+      -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+      -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+      -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+      transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+      box-shadow:2px 0px 14px rgba(0, 0, 0, 0.6);
+  } 
+  .botao::after {
+   
+      content: '';
+      width: 0%;
+      height: 100%;
+      display: block;
+      background: #ffffff;
+      position: absolute;
+      -ms-transform: skewX(-15deg);
+      -webkit-transform: skewX(-15deg); 
+      transform: skewX(-15deg);   
+      left: -10%;
+      opacity: 0;
+      top: 0;
+      z-index: -15;
+      -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+      -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+      -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+      transition: all .4s cubic-bezier(.2,.95,.57,.99);
+      box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+  }
+  .botao:hover::before, .botao:hover::before{
+     
+      opacity:1;
+      width: 120%;
+  
+  }
+  .botao:hover::after, .botao:hover::after{
+  
+      opacity:1;
+      width: 150%;
+  
+  }
+  .icon {
+    background-image: url(../img/mercado-libre.svg);
+    height: 23px;
+    width: 17px;
+  }
+
+
+.main_footer_copy { 
+    background-color: #071b20;
+    width: 100%;
+    float: left;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding-top: 10px;}
+.main_footer_copy p { font-size:1em; color:#e1e0e0; height:20px; }
+.main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
+.main_footer_copy .by   { font-size:0.96em; }
+.main_footer_copy .by a       { color:#fff; text-decoration:none; }
+.main_footer_copy .by a:hover { text-decoration:underline; }
+.main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+
+/*Responsivo*/
+/*768PX BREAKPOINT*/
+@media (min-width:48em){
+
+    .colfooter  { width:30%; margin-right:5%; margin-bottom:0; }
+    .colfooter:nth-of-type(3n+0){ margin-right:0; border-right:0;}
+    
+    } 
+    
+    /*FOOTER*/
+    
+    
+    /*Começa o Responsivo*/
+    
+    /*480PX BREAKPOINT*/
+    /*480 dividido por 16 = 30em*/
+    @media (min-width:30em){
+    
+    .boxBannerTopo { padding:1em 0; }
+    
+    }
+    
+    /*600PX BREAKPOINT*/
+    /*600 dividido por 16 = 37,5em*/
+    @media (min-width:37em){
+    
+    } 
+    
+    /*768PX BREAKPOINT*/
+    /*768 dividido por 16 = 48em*/
+    @media (min-width:48em){
+    
+    } 
+    
+    /*960PX BREAKPOINT*/
+    /*960 dividido por 16 = 60em*/
+    @media (min-width:60em){
+    
+     .section-seu-codigo          { padding:20px 0px; }
+     .section-seu-codigo .content { width:80%; padding:1em 0; margin:0 10%; }
+    
+    }
+    
+    /*1280PX BREAKPOINT*/
+    /*1280 dividido por 16 = 80em*/
+    @media (min-width:80em){
+    
+     
+    }
+    
+    /*1366PX BREAKPOINT*/
+    /*1366 dividido por 16 = 85,375em*/
+    @media (min-width:85em){
+    
+     .content  { width:80%; margin:0 10%; }
+    
+    }
+    
+    /*1600PX BREAKPOINT*/
+    /*1600 dividido por 16 = 100em*/
+    @media (min-width:100em){
+    
+    
+    }
+    /*Fecha o Responsivo*/
+    
+
 
 
