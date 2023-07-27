@@ -181,10 +181,11 @@
                     <div class="row">
                         <div class="col"></div>
                         <div class="col">
-                            <a href="" id="meuLink" target="_blank">
-                                <h2 id="resultado" class="meuLink"></h2>
-                            </a>
-
+                            <button type="button" class="btn btn-outline-warning" id="btn-comprar" style="margin-left: 30%;">
+                                <a href="" id="meuLink" target="_blank">
+                                    <h2 id="resultado"></h2>
+                                </a> 
+                            </button>                   
                         </div>
                         <div class="col"></div>
 
@@ -316,6 +317,11 @@
     const imagemServidor = document.getElementById('server-image');
     const imagemEloAtual = document.getElementById('current-image');
     const imagemEloDesejado = document.getElementById('desired-image');
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementById("btn-comprar").style.display = 'none';
+  });
+   
 
 
 
@@ -479,6 +485,7 @@
                 break;
 
         }
+        
     }
 
     function AlteraPreco() {
@@ -490,6 +497,7 @@
         const DivisaoDesejada = selectDivisaoDesejada.value;
 
         const linkPreco = document.getElementById('meuLink');
+        document.getElementById("btn-comprar").style.display = 'block';
 
         // Atualiza o texto do h2 com base na opção selecionada
         if (Servidor == 'BR') {
@@ -938,6 +946,7 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                     } else {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                         h2Resultado.textContent = '';
                                                                                                                                                                                                                                                                                                                                                                                                                                                                         linkPreco.href = '';
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        document.getElementById("btn-comprar").style.display = 'none';
                                                                                                                                                                                                                                                                                                                                                                                                                                                                     }
             } else
                 if (LigaAtual == 'bronze') {
@@ -1323,6 +1332,7 @@
                                                                                                                                                                                                                                                                                                                                                                                                         } else {
                                                                                                                                                                                                                                                                                                                                                                                                             h2Resultado.textContent = '';
                                                                                                                                                                                                                                                                                                                                                                                                             linkPreco.href = '';
+                                                                                                                                                                                                                                                                                                                                                                                                            document.getElementById("btn-comprar").style.display = 'none';
                                                                                                                                                                                                                                                                                                                                                                                                         }
 
                 } else // FIM IF BRONZE
@@ -1645,6 +1655,7 @@
                                                                                                                                                                                                                                                                                                                                             } else {
                                                                                                                                                                                                                                                                                                                                                 h2Resultado.textContent = '';
                                                                                                                                                                                                                                                                                                                                                 linkPreco.href = '';
+                                                                                                                                                                                                                                                                                                                                                document.getElementById("btn-comprar").style.display = 'none';
                                                                                                                                                                                                                                                                                                                                             }
 
                     } else
@@ -1903,6 +1914,7 @@
                                                                                                                                                                                                                                                                                 } else {
                                                                                                                                                                                                                                                                                     h2Resultado.textContent = '';
                                                                                                                                                                                                                                                                                     linkPreco.href = '';
+                                                                                                                                                                                                                                                                                    document.getElementById("btn-comprar").style.display = 'none';
                                                                                                                                                                                                                                                                                 }
 
                         } else
@@ -2097,6 +2109,7 @@
                                                                                                                                                                                                                     } else {
                                                                                                                                                                                                                         h2Resultado.textContent = '';
                                                                                                                                                                                                                         linkPreco.href = '';
+                                                                                                                                                                                                                        document.getElementById("btn-comprar").style.display = 'none';
                                                                                                                                                                                                                     }
 
                             } else
@@ -2292,6 +2305,7 @@
                                                                                             } else {
                                                                                                 h2Resultado.textContent = '';
                                                                                                 linkPreco.href = '';
+                                                                                                document.getElementById("btn-comprar").style.display = 'none';
                                                                                             }
                                     } else
 
@@ -2302,12 +2316,16 @@
                                         } else {
                                             h2Resultado.textContent = '';
                                             linkPreco.href = '';
+                                            document.getElementById("btn-comprar").style.display = 'none';
                                         }
+                                        
 
         } else { // FIM IF BR
             h2Resultado.textContent = '';
             linkPreco.href = '';
+            document.getElementById("btn-comprar").style.display = 'none';
         }
+        
     }//FIM ALTERAPRECO()
 
 
