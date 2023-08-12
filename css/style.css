@@ -221,6 +221,11 @@
     height: 200px;
     width: 200px;;
 }
+.info{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    margin-bottom: 0%!important;
+}
 .meuLink{
     text-decoration: none !important;
     margin-top: 4%;
