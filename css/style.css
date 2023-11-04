@@ -202,6 +202,31 @@
     background-color: rgb(255, 255, 255)!important;
     max-width: 100%;
     max-height: auto;
+    display: none;
+}
+@import url('https://fonts.cdnfonts.com/css/tt-octosquares-trl');
+.pagamento{
+    font-family:'TT Octosquares Trl', sans-serif !important;
+    font-size: larger;
+
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    margin: 5% 0;
+}
+.pagamento h4{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.pagamento p{
+    font-size: x-large;
+    font-weight: 500;
+    text-align: center;
+}
+.pagamento img{
+    width: 30%;
+    height: auto;
 }
 .px{
     padding-left: 50px !important;
@@ -242,7 +267,7 @@ a:hover {
 }
 a:active { color: black; text-decoration: none;}
 
-@import url('https://fonts.cdnfonts.com/css/tt-octosquares-trl');
+
 .footer{
     
  /*   background-image: url("../img/fundo_contato.jpg") ;*/
